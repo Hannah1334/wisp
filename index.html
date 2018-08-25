@@ -1,0 +1,330 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
+<style>
+body{
+background-image: url('https://i.imgur.com/mlboek6.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#000000;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #A68BDC;}
+
+#banner {
+position:absolute;
+background-image: url('https://i.imgur.com/cwEmVws.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:rgba(20, 20, 20, 0.88);
+border-left:2px solid #2EAAF2;
+border-right:2px solid #2EAAF2;
+width:20%;
+height:100%;
+left:15%;
+top:0%;
+}
+
+#gif {
+position:relative;
+background-image: url('https://media.giphy.com/media/fGLKYBgZFlQixeXuoP/giphy.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+border:2px solid #2EAAF2;
+width:80%;
+height:32%;
+top:3%;
+left:9%;
+}
+
+#title {
+position:relative;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:80%;
+height:5%;
+top:3.75%;
+left:9%;
+text-align:center;
+color:#ffffff;
+text-transform:uppercase;
+font-size:3vh;
+font-family: 'Metamorphous', cursive;
+line-height:1.7;
+}
+
+#tabbox1 {
+position:absolute;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:15%;
+height:3%;
+left:7.5%;
+top:42.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:15%;
+height:3%;
+left:24.25%;
+top:42.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:15.2%;
+height:3%;
+left:41.5%;
+top:42.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:15%;
+height:3%;
+left:59%;
+top:42.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:15%;
+height:3%;
+left:76%;
+top:42.5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover {
+border:2px solid #A68BDC;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basicbox {
+position:absolute; 
+overflow:auto;
+padding:2%;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:76%;
+height:48%;
+left:9%;
+top:46.75%;
+color:#ffffff;
+font-family: 'Tinos', serif;
+font-size:1.5vh;
+}
+
+#bigbox {
+position:absolute;
+border:2px solid #2EAAF2;
+background-image: url('https://i.imgur.com/IYST3EC.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:rgba(20, 20, 20, 0.88);
+width:40%;
+height:50%;
+top:44%;
+left:38%;
+}
+
+#content {
+position:absolute; 
+overflow:auto;
+padding:2%;
+border:2px solid #2EAAF2;
+background-color:rgba(20, 20, 20, 0.88);
+width:85%;
+height:76%;
+left:5%;
+top:8%;
+color:#ffffff;
+font-family: 'Tinos', serif;
+font-size:1.5vh;
+}
+
+#pic1 {
+position:absolute;
+border:2px solid #2EAAF2;
+width:17%;
+height:34%;
+top:6%;
+left:38%;
+background-image: url('https://i.imgur.com/pmuQTf9.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:rgba(20, 20, 20, 0.88);
+}
+
+#pic2 {
+position:absolute;
+border:2px solid #2EAAF2;
+width:17%;
+height:34%;
+top:6%;
+left:61%;
+background-image: url('https://i.imgur.com/XgPXNHh.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:rgba(20, 20, 20, 0.88);
+}
+
+.tabs{
+display:block;
+width:100%;
+height:100%;
+text-align:center;
+color:#2EAAF2;
+font-family: 'Tinos', serif;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5 {
+display: none;
+}
+
+i {
+color:#45F1FF;
+}
+
+a {
+color:#45F1FF;
+}
+
+h1 {
+color: #FEE9FC;
+font-family: 'Righteous', cursive;
+text-align:center;
+font-size: 2.3vh;
+border-left:10px solid #8667CE;
+border-right:10px solid #8667CE;
+background-color:#AC8EE4;
+text-transform:uppercase;
+}
+
+b {
+color:#3D8AC0;
+font-family: 'Righteous', cursive;
+}
+
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur830.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Metamorphous|Righteous|Tinos" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="banner">
+<div id="gif"></div>
+<div id="title">
+Shard // Wisp
+</div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1')">I.</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab2')">II.</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab3')">III.</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab4')">IV.</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab5')">V.</span>
+</div>
+<div id="basicbox">
+<h1>Basic Information</h1>
+<b>Name:</b> Ferocity<br>
+<b>Age:</b> Third Phase<br>
+<b>Birthdate:</b> Unknown<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Will-o'-the-Wisp<br>
+<b>Race:</b> Shard<br>
+<b>Tree(s):</b> ???<br>
+<b>Rank:</b> ???<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
+<b>Height:</b> 5'7"<br>
+<b>Weight:</b> 95 lbs.
+<br><br>
+<img style="width:100%;" src="https://i.imgur.com/dw474KW.png"/>
+</div>
+</div>
+
+<div id="bigbox">
+<div id="content">
+<h1>Detailed Information</h1>
+<b>Appearance</b><br>
+<br><br>
+<b>Personality</b><br>
+</div>
+</div>
+
+<div id="pic1"></div>
+<div id="pic2"></div>
+
+<div id="tab1">
+<h1>Creation of the Wisps</h1><br>
+<br><br>
+<h1>Shard Evolution</h1>
+</div>
+<div id="tab2">
+<h1>Racials</h1>
+</div>
+<div id="tab3">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+<h1>Universal Spells</h1>
+</div>
+<div id="tab4">
+<h1>???</h1>
+</div>
+<div id="tab5">
+<h1>???</h1>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Ferocity.mp3" autostart="true" loop="true">
